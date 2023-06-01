@@ -11,6 +11,10 @@ import iconAbout from "./about/icon.png";
 
 import header01 from "./01/header.jpg";
 
+export type Projects = {
+	[id: string]: Project;
+}
+
 export type Project = {
 	id: string
 	title: string
@@ -49,4 +53,4 @@ const projects: Project[] = [{
 	icon: iconAbout
 }];
 
-export default projects;
+export default Object.fromEntries(projects.map(project => [project.id, project]));

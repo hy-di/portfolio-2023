@@ -11,7 +11,9 @@
 		<h2>{title}</h2>
 	</ContentContainer>
 	<div class="image" class:no-image={!image}>
-		<img src={image} alt="">
+		{#if image}
+			<img src={image} alt="">
+		{/if}
 		<div class="image-overlay">
 			<ContentContainer>
 				{#if description}
@@ -29,17 +31,25 @@
 
 	.image {
 		position: relative;
-		background-color: var(--c-back-s1);
+		background-color: hsl(var(--c-back-h), var(--c-back-s), calc(var(--c-back-l) - 10%));
+	}
+
+	img, .image.no-image {
+		width: 100%;
+		min-height: 200px;
+		max-height: 600px;
 	}
 
 	.image.no-image {
-		width: 100%;
 		aspect-ratio: 4 / 1;
 	}
 
 	img {
 		display: block;
 		width: 100%;
+		min-height: 200px;
+		max-height: 600px;
+		object-fit: cover;
 	}
 
 	.image-overlay {
@@ -63,8 +73,14 @@
 		align-self: flex-end;
 		padding-bottom: 1em;
 
+		color: var(--c-back);
+		--c-shadow: hsl(var(--c-fore-h), var(--c-fore-s), calc(var(--c-fore-l) / 2));
+		text-shadow: 0 0 0.125em var(--c-shadow),
+			0 0.125em 0.25em var(--c-shadow),
+			0 0 2em var(--c-shadow);
 		font-weight: bold;
 		font-size: 1.125em;
+
 		white-space: pre-line;
 	}
 </style>

@@ -41,10 +41,8 @@
 
 		img {
 			flex-shrink: 9999999;
-
+			max-height: 400px;
 			min-width: 80px;
-			height: clamp(240px, 50vh, 400px);
-			object-fit: contain;
 		}
 	}
 </style>

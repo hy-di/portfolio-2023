@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ImageSection from "../../lib/ImageSection.svelte";
+	import ImageSection from "$lib/ImageSection.svelte";
 
 	import overviewAImg from "./overview-a.jpg";
 	import overviewBImg from "./overview-b.jpg";

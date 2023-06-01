@@ -1,13 +1,15 @@
 <script lang="ts">
+	import type { Projects } from "../projects";
+
 	import ContentContainer from "./ContentContainer.svelte";
 	import ProjectThumb from "./ProjectThumb.svelte";
 
-	export let projects: { id: string, icon: string }[];
+	export let projects: Projects;
 </script>
 
 <ContentContainer>
 	<section>
-		{#each projects as { id, icon }}
+		{#each Object.values(projects) as { id, icon }}
 			<ProjectThumb {id} {icon} />
 		{/each}
 	</section>

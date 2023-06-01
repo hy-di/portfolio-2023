@@ -31,13 +31,10 @@ html {
 	--c-back-hsl: var(--c-back-h), var(--c-back-s), var(--c-back-l);
 	--c-back: hsl(var(--c-back-hsl));
 
-	--c-back-s1-h: 0;
-	--c-back-s1-s: 0%;
-	--c-back-s1-l: 85%;
-	--c-back-s1-hsl: var(--c-back-s1-h), var(--c-back-s1-s), var(--c-back-s1-l);
-	--c-back-s1: hsl(var(--c-back-s1-hsl));
-
 	--l-content-max-width: 1200px;
+
+	--ease-in-circ: cubic-bezier(0.55, 0, 1, 0.45);
+	--ease-out-circ: cubic-bezier(0, 0.55, 0.45, 1);
 
 	font-family: var(--f-default);
 	line-height: 1.5;

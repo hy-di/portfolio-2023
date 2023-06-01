@@ -1,23 +1,22 @@
 <script lang="ts">
 	import projects from "../projects";
 
-	import Project from "../lib/Project.svelte";
-	import Hero from "../lib/Hero.svelte";
-	import ProjectOverview from "../lib/ProjectOverview.svelte";
+	import SideNav from "$lib/nav/SideNav.svelte";
+	import Hero from "$lib/Hero.svelte";
+	import ProjectOverview from "$lib/ProjectOverview.svelte";
+	import Projects from "$lib/Projects.svelte";
 </script>
 
+<SideNav {projects} />
 <main>
 	<Hero title="Heidi Meyer" text="I’m a junior industrial designer and here is some of my work." />
 	<ProjectOverview {projects} />
-	{#each projects as project}
-		<Project {project} />
-	{/each}
+	<Projects {projects} />
 </main>
 
 <style>
 	main {
 		display: flex;
 		flex-direction: column;
-		gap: 256px;
 	}
 </style>
