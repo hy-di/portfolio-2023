@@ -65,7 +65,7 @@
 
 		display: grid;
 		grid-template-rows: repeat(2, 1fr);
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 1fr;
 	}
 
 	.description {
@@ -74,7 +74,7 @@
 		padding-bottom: 1em;
 
 		color: var(--c-back);
-		--c-shadow: hsl(var(--c-fore-h), var(--c-fore-s), calc(var(--c-fore-l) / 2));
+		--c-shadow: hsl(var(--c-fore-h), var(--c-fore-s), calc(var(--c-fore-l) / 2), 0.5);
 		text-shadow: 0 0 0.125em var(--c-shadow),
 			0 0.125em 0.25em var(--c-shadow),
 			0 0 2em var(--c-shadow);

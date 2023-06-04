@@ -86,3 +86,15 @@ a {
 a:hover, a:focus {
 	color: var(--c-primary);
 }
+
+button {
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	text-decoration: none;
+	appearance: none;
+}

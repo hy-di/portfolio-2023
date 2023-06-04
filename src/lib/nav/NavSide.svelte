@@ -17,7 +17,7 @@
 
 <nav class:hide bind:clientWidth={$width}>
 	<div class="nav-content">
-		<NavContent {projects} />
+		<NavContent {projects} verticalFrom={2} />
 	</div>
 </nav>
 
@@ -46,7 +46,7 @@
 		transition-timing-function: var(--ease-in-circ);
 	}
 
-	@media (max-width: 801px) {
+	@media (max-width: 799px) {
 		nav {
 			/* Not setting display: none here, so we can still observe the clientWidth. */
 			padding: 0;

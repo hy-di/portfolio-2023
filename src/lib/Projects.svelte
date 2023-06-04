@@ -44,8 +44,8 @@
 	.projects-list {
 		display: flex;
 		flex-direction: column;
-		margin-top: 256px;
-		gap: 256px;
+		margin-top: 192px;
+		gap: 192px;
 	}
 
 	.scroll-observer-target-pre-projects {

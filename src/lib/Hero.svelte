@@ -39,14 +39,27 @@
 
 	h1 {
 		margin-bottom: 1rem;
+		animation: slide-up 1000ms 500ms ease backwards;
 	}
 
 	p {
 		font-size: 1.5em;
 		max-width: 25ch;
+		animation: slide-up 1000ms 1500ms ease backwards;
 	}
 
 	.text {
 		padding-bottom: 4em; /* for better visual balance */
+	}
+
+	@keyframes slide-up {
+		0% {
+			opacity: 0;
+			transform: translateY(1em);
+		}
+		100% {
+			opacity: 1;
+			transform: none;
+		}
 	}
 </style>
