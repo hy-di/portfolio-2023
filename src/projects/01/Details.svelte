@@ -3,7 +3,8 @@
 
 	import overviewAImg from "./overview-a.jpg";
 	import overviewBImg from "./overview-b.jpg";
-	import step1Img from "./step-1.png";
+	import step1AImg from "./step-1-a.png";
+	import step1BImg from "./step-1-b.png";
 	import step2Img from "./step-2.jpg";
 	import step3Img from "./step-3.jpg";
 </script>
@@ -30,11 +31,12 @@
 		application, a room sensor, and a smartwatch, each of which has been visually designed.
 	</p>
 </ImageSection>
-<ImageSection image={step1Img} flip>
+<ImageSection image={step1AImg} flip verticalAlign="end">
 	<h3>Step 1:</h3>
 	<p>
 		Sketching to figure out the basic volume
 	</p>
+	<img src={step1BImg} alt="">
 </ImageSection>
 <ImageSection image={step2Img}>
 	<h3>Step 2:</h3>

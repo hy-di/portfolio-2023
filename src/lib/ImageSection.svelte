@@ -2,9 +2,10 @@
 	export let image: string;
 	export let alt = "";
 	export let flip = false;
+	export let verticalAlign: "start" | "center" | "end" = "center";
 </script>
 
-<section class:flip>
+<section class:flip style:--vertical-align={verticalAlign}>
 	<div class="content">
 		<slot />
 	</div>
@@ -12,8 +13,15 @@
 </section>
 
 <style>
-	.content :global(p + p) {
+	.content :global(p + p),
+	.content :global(p + img) {
 		margin-top: 1.5em;
+	}
+
+	.content :global(img) {
+		display: block;
+		min-width: 0;
+		width: 100%;
 	}
 
 	section {
@@ -26,9 +34,9 @@
 
 	@media (min-width: 800px) {
 		section {
-			align-items: center;
 			gap: 6em;
 			flex-direction: row;
+			align-items: var(--vertical-align);
 		}
 		section.flip {
 			flex-direction: row-reverse;
