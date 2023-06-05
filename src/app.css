@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Righteous&display=block');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Righteous&display=block');
 
 html {
 	box-sizing: border-box;
@@ -10,7 +10,7 @@ html {
 :root {
 	--f-fallback: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
 		helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-	--f-default: 'Rubik', var(--f-fallback); /* Raleway / Outfit / Archivo */
+	--f-default: 'Outfit', var(--f-fallback);
 	--f-display: 'Righteous', var(--f-fallback);
 
 	--c-primary-h: 28;
