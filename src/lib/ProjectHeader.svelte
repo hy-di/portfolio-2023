@@ -26,7 +26,7 @@
 
 <style>
 	h2 {
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 	}
 
 	.image {
@@ -71,7 +71,7 @@
 	.description {
 		grid-area: -1 / 1 / -2 / 2;
 		align-self: flex-end;
-		padding-bottom: 1em;
+		padding-bottom: 1rem;
 
 		color: var(--c-back);
 		--c-shadow: hsl(var(--c-fore-h), var(--c-fore-s), calc(var(--c-fore-l) / 2), 0.5);
@@ -79,7 +79,7 @@
 			0 0.125em 0.25em var(--c-shadow),
 			0 0 2em var(--c-shadow);
 		font-weight: bold;
-		font-size: 1.125em;
+		font-size: 3em;
 
 		white-space: pre-line;
 	}

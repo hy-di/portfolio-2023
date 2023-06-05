@@ -1,52 +1,39 @@
 <script lang="ts">
 	import ImageSection from "$lib/ImageSection.svelte";
 
-	import overviewAImg from "./overview-a.jpg";
-	import overviewBImg from "./overview-b.jpg";
-	import step1AImg from "./step-1-a.png";
-	import step1BImg from "./step-1-b.png";
-	import step2Img from "./step-2.jpg";
-	import step3Img from "./step-3.jpg";
+	import imgAppAndSensor from "./01_appandsensor.webp";
+	import imgPhotomodels from "./01_photomodels.webp";
+	import imgPrototypesA from "./01_prototypesA.webp";
+	import imgPrototypesB from "./01_prototypesB.webp";
+	import imgSketchesA from "./01_sketchesA.webp";
+	import imgSketchesB from "./01_sketchesB.webp";
+	import imgWatchAndStand from "./01_watchandstand.webp";
 </script>
 
-<ImageSection image={overviewAImg} flip>
-	<h3>Overview</h3>
+<ImageSection image={imgSketchesA} flip verticalAlign="end">
+	<img src={imgSketchesB} alt="">	
+</ImageSection>
+
+<ImageSection image={imgPrototypesB} verticalAlign="start">
+	<img src={imgPrototypesA} alt="">	
+</ImageSection>
+
+<ImageSection image={imgAppAndSensor} flip>
 	<p>
-		Technology offers a way to address the increasing desire of older people to live at home longer,
-		the shortage of caregivers and the growing care needs of the baby boomer generation.
-	</p>
-	<p>
-		To address these challenges, an emergency assistance system is being developed that provides
-		security for individuals and their loved ones and is targeted at people of all ages who need
-		care.
+		cafy is a health monitoring system for everyone. 
+		It is based on a three-level system that takes into account all persons with or without care needs, as well as their relatives.
 	</p>
 </ImageSection>
-<ImageSection image={overviewBImg}>
+
+<ImageSection image={imgWatchAndStand}>
 	<p>
-		The design criteria of the system are identified through empirical studies considering existing
-		approaches and privacy constraints.
-	</p>
-	<p>
-		This leads to the development of a product family called cAfy, which consists of a smartphone
-		application, a room sensor, and a smartwatch, each of which has been visually designed.
+		It is a system that not only reacts quickly in emergencies, but also monitors the physical and mental health of the individual at all times. 
+		Cafy is timeless, soft and universally designed to provide comfort and security.
 	</p>
 </ImageSection>
-<ImageSection image={step1AImg} flip verticalAlign="end">
-	<h3>Step 1:</h3>
+
+<ImageSection image={imgPhotomodels} flip>
 	<p>
-		Sketching to figure out the basic volume
-	</p>
-	<img src={step1BImg} alt="">
-</ImageSection>
-<ImageSection image={step2Img}>
-	<h3>Step 2:</h3>
-	<p>
-		Prototyping and modeling
-	</p>
-</ImageSection>
-<ImageSection image={step3Img} flip>
-	<h3>Step 3:</h3>
-	<p>
-		Making models for testing
+		The product catalog to date consists of a smartwatch with charging stations, a room sensor and an app to view the collected data.
 	</p>
 </ImageSection>
