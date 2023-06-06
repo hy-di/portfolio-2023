@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Righteous&display=block');
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+:root {
+	--f-fallback: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+		helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+	--f-default: 'Outfit', var(--f-fallback);
+	--f-display: 'Righteous', var(--f-fallback);
+
+	--c-primary-h: 28;
+	--c-primary-s: 87%;
+	--c-primary-l: 62%;
+	--c-primary-hsl: var(--c-primary-h), var(--c-primary-s), var(--c-primary-l);
+	--c-primary: hsl(var(--c-primary-hsl));
+
+	--c-fore-h: 0;
+	--c-fore-s: 0%;
+	--c-fore-l: 20%;
+	--c-fore-hsl: var(--c-fore-h), var(--c-fore-s), var(--c-fore-l);
+	--c-fore: hsl(var(--c-fore-hsl));
+
+	--c-back-h: 0;
+	--c-back-s: 0%;
+	--c-back-l: 95%;
+	--c-back-hsl: var(--c-back-h), var(--c-back-s), var(--c-back-l);
+	--c-back: hsl(var(--c-back-hsl));
+
+	--l-content-max-width: 1200px;
+
+	--ease-in-circ: cubic-bezier(0.55, 0, 1, 0.45);
+	--ease-out-circ: cubic-bezier(0, 0.55, 0.45, 1);
+
+	font-family: var(--f-default);
+	line-height: 1.5;
+	font-weight: 400;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	color: var(--c-fore);
+	background-color: var(--c-back);
+
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+}
+
+p {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 4em;
+}
+h2 {
+	font-size: 3em;
+}
+h3 {
+	font-size: 1.5em;
+}
+
+a {
+	color: inherit;
+	transition: color 300ms ease;
+}
+a:hover, a:focus {
+	color: var(--c-primary);
+}
+
+button {
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	text-decoration: none;
+	appearance: none;
+}
