@@ -9,7 +9,10 @@
 </script>
 
 <ul>
-	<li class="logo">
+	<li
+		class="logo"
+		class:active={$activeProjectID === undefined}
+	>
 		<a href="." on:click>
 			<Monogram />
 		</a>
