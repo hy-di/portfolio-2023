@@ -44,7 +44,7 @@
 	.projects-list {
 		display: flex;
 		flex-direction: column;
-		margin-top: 192px;
+		margin: 192px 0;
 		gap: 192px;
 	}
 

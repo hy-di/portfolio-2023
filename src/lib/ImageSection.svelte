@@ -32,12 +32,12 @@
 		flex-direction: column;
 		gap: 1.5em;
 
-		margin-top: 4rem;
+		margin-top: 4em;
 	}
 
 	@media (min-width: 800px) {
 		section {
-			gap: 6em;
+			gap: 4em;
 			flex-direction: row;
 			align-items: var(--vertical-align);
 		}
