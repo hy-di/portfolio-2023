@@ -5,7 +5,10 @@
 	export let verticalAlign: "start" | "center" | "end" = "center";
 </script>
 
-<section class:flip style:--vertical-align={verticalAlign}>
+<section
+	class:flip
+	style:--vertical-align={verticalAlign === "center" ? "center" : `flex-${verticalAlign}`}
+>
 	<div class="content">
 		<slot />
 	</div>
