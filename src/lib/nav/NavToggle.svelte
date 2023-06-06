@@ -26,7 +26,7 @@
 		align-items: center;
 		gap: var(--gap);
 
-		padding: 1em;
+		padding: 1.5em;
 		aspect-ratio: 1;
 		border-radius: 50%;
 		color: var(--c-back);
