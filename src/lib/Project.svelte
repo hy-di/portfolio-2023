@@ -7,8 +7,8 @@
 </script>
 
 <article id={project.id}>
-	<ProjectHeader title={project.title} description={project.description} image={project.headerImage} />
+	<ProjectHeader {project} />
 		<ContentContainer>
-			<svelte:component this={project.details}/>
+			<svelte:component this={project.details} />
 		</ContentContainer>
 </article>

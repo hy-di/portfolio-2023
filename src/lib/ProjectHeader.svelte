@@ -1,32 +1,72 @@
 <script lang="ts">
+	import type { Project } from "../projects";
+
 	import ContentContainer from "./ContentContainer.svelte";
 
-	export let title: string;
-	export let description: string | undefined;
-	export let image: string | undefined;
+	export let project: Project;
+
+	let headlineElWidth = 0;
+	let idElWidth = 0;
+	$: idScale = Math.min(headlineElWidth / idElWidth, 1);
 </script>
 
 <header>
 	<ContentContainer>
-		<h2>{title}</h2>
-	</ContentContainer>
-	<div class="image" class:no-image={!image}>
-		{#if image}
-			<img src={image} alt="">
-		{/if}
-		<div class="image-overlay">
-			<ContentContainer>
-				{#if description}
-					<p class="description">{description}</p>
-				{/if}
-			</ContentContainer>
+		<div class="headline" bind:clientWidth={headlineElWidth}>
+			{#if project.logo}
+				<div class="logo">
+					<svelte:component this={project.logo} title={project.title} />
+				</div>
+			{:else}
+				<h2>{project.title}</h2>
+			{/if}
+			<span class="id" bind:clientWidth={idElWidth} style:--scale={idScale}>
+				{project.id}
+			</span>
 		</div>
+	</ContentContainer>
+	<div class="image" class:no-image={!project.headerImage}>
+		{#if project.headerImage}
+			<img src={project.headerImage} alt="">
+		{/if}
 	</div>
 </header>
 
 <style>
+	.headline {
+		display: flex;
+		align-items: flex-end;
+		position: relative;
+		min-height: 10em;
+	}
+
 	h2 {
+		font-family: var(--f-display);
 		margin-bottom: 1rem;
+	}
+
+	.logo {
+		height: 4em;
+		margin-bottom: 1rem;
+	}
+	.logo :global(svg) {
+		height: 100%;
+		width: auto;
+	}
+
+	.id {
+		font-family: var(--f-display);
+		font-size: 12em;
+		line-height: 0.75;
+		color: hsl(var(--c-fore-hsl), 0.2);
+		user-select: none;
+
+		position: absolute;
+		right: 0;
+		bottom: -0.08em;
+
+		transform-origin: bottom right;
+		transform: scale(var(--scale));
 	}
 
 	.image {
@@ -50,37 +90,5 @@
 		min-height: 200px;
 		max-height: 600px;
 		object-fit: cover;
-	}
-
-	.image-overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-	}
-
-	.image-overlay > :global(*) {
-		height: 100%;
-
-		display: grid;
-		grid-template-rows: repeat(2, 1fr);
-		grid-template-columns: 1fr;
-	}
-
-	.description {
-		grid-area: -1 / 1 / -2 / 2;
-		align-self: flex-end;
-		padding-bottom: 1rem;
-
-		color: var(--c-back);
-		--c-shadow: hsl(var(--c-fore-h), var(--c-fore-s), calc(var(--c-fore-l) / 2), 0.5);
-		text-shadow: 0 0 0.125em var(--c-shadow),
-			0 0.125em 0.25em var(--c-shadow),
-			0 0 2em var(--c-shadow);
-		font-weight: bold;
-		font-size: 3em;
-
-		white-space: pre-line;
 	}
 </style>
