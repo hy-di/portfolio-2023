@@ -1,12 +1,14 @@
 <script lang="ts">
-	import monogram from '../assets/monogram.svg';
+	import Monogram from '../assets/Monogram.svelte';
 
 	export let title: string;
 	export let text: string | string[] = [];
 </script>
 
 <section>
-	<img src={monogram} alt="">
+	<div class="logo">
+		<Monogram />
+	</div>
 	<div class="text">
 		<h1>{title}</h1>
 		{#each [text].flat() as p}
@@ -29,12 +31,15 @@
 		text-align: center;
 	}
 
-	img {
+	.logo {
+		width: 33ch;
+		max-width: 100%;
+		color: var(--c-primary);
+	}
+
+	.logo :global(svg) {
 		display: block;
-		width: 33.3%;
-		min-width: 100px;
-		max-width: 520px;
-		aspect-ratio: 1;
+		width: 100%;
 	}
 
 	h1 {

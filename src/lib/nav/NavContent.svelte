@@ -2,11 +2,18 @@
 	import type { Projects } from "../../projects";
 	import { activeProjectID } from "../../stores";
 
+	import Monogram from "../../assets/Monogram.svelte";
+
 	export let projects: Projects;
 	export let verticalFrom = Infinity;
 </script>
 
 <ul>
+	<li class="logo">
+		<a href="." on:click>
+			<Monogram />
+		</a>
+	</li>
 	{#each Object.values(projects) as { id }}
 		<li
 			class:vertical={id.length > verticalFrom}
@@ -41,6 +48,7 @@
 
 	a {
 		display: flex;
+		justify-content: center;
 		align-items: center;
 		text-decoration: none;
 
@@ -58,5 +66,16 @@
 
 	.vertical a .id {
 		margin-right: -10%;
+	}
+
+	.logo {
+		height: 1em;
+		padding: 0.125em 0;
+	}
+	.logo a {
+		height: 100%;
+	}
+	.logo a :global(svg) {
+		height: 100%;
 	}
 </style>
