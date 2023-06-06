@@ -14,8 +14,8 @@
 	<img src={imgSketchesB} alt="">	
 </ImageSection>
 
-<ImageSection image={imgPrototypesB} verticalAlign="start">
-	<img src={imgPrototypesA} alt="">	
+<ImageSection image={imgPrototypesA} verticalAlign="start">
+	<img src={imgPrototypesB} alt="">	
 </ImageSection>
 
 <ImageSection image={imgAppAndSensor} flip>

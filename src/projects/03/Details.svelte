@@ -18,7 +18,7 @@
 	<img src={imgSketches} alt="">	
 </ImageSection>
 
-<ImageSection image={imgPhotoModelsA} flip verticalAlign="start">
+<ImageSection image={imgPhotoModelsA} flip verticalAlign="end">
 	<img src={imgTechnicalDrawing} alt="">	
 </ImageSection>
 

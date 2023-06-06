@@ -17,7 +17,7 @@
 		In my free time I love to travel around the world and gain new experiences.
 	</p>
 	<p>
-		If I sparked your interest, contact me here.
+		If I sparked your interest, contact me <a href="mailto:heidimeyer256@gmail.com">here</a>.
 	</p>
 </ImageSection>
 

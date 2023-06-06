@@ -12,7 +12,7 @@ import icon04 from "./04/icon.png";
 import icon05 from "./05/icon.png";
 import iconAbout from "./about/about_icon.webp";
 
-import banner01 from "./01/01_banner.webp";
+import banner01 from "./01/01_banner02.webp";
 import banner02 from "./02/02_banner.webp";
 import banner03 from "./03/03_banner.webp";
 import bannerAbout from "./about/about_banner.webp";
@@ -33,21 +33,18 @@ export type Project = {
 const projects: Project[] = [{
 	id: "01",
 	title: "01",
-	description: "cafy",
 	icon: icon01,
 	headerImage: banner01,
 	details: details01
 }, {
 	id: "02",
 	title: "02",
-	description: "skore",
 	icon: icon02,	
 	headerImage: banner02,
 	details: details02
 }, {
 	id: "03",
 	title: "03",
-	description: "doup",
 	icon: icon03,
 	headerImage: banner03,
 	details: details03
@@ -62,7 +59,6 @@ const projects: Project[] = [{
 }, {
 	id: "about",
 	title: "About",
-	description: "me",
 	icon: iconAbout,
 	headerImage: bannerAbout,
 	details: detailsAbout
