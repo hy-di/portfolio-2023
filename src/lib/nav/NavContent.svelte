@@ -59,7 +59,7 @@
 		transition-property: opacity, color;
 	}
 
-	a:hover, a:focus, .active a {
+	a:hover, a:focus-visible, .active a {
 		opacity: 1;
 	}
 

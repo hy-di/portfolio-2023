@@ -36,7 +36,7 @@
 		transition: background-color 300ms ease;
 	}
 
-	button:hover, button:focus {
+	button:hover, button:focus-visible {
 		background-color: var(--c-primary);
 	}
 

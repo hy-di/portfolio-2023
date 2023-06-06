@@ -41,8 +41,7 @@
 		transition: transform 300ms ease;
 	}
 	.project-thumb:hover svg h2,
-	.project-thumb:focus svg h2,
-	.project-thumb:focus-within svg h2 {
+	.project-thumb:focus-visible svg h2 {
 		transform: translateY(-10%);
 	}
 </style>

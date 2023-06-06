@@ -83,7 +83,7 @@ a {
 	color: inherit;
 	transition: color 300ms ease;
 }
-a:hover, a:focus {
+a:hover, a:focus-visible {
 	color: var(--c-primary);
 }
 
