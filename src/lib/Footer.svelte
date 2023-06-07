@@ -11,6 +11,7 @@
 <style>
 	footer {
 		background-color: hsl(var(--c-back-h), var(--c-back-s), calc(var(--c-back-l) - 10%));
-		padding: 1em 0;
+		padding-top: 2em;
+		padding-bottom: 5em;
 	}
 </style>
