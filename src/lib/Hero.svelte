@@ -35,6 +35,8 @@
 		width: 33ch;
 		max-width: 100%;
 		color: var(--c-primary);
+		padding: 1em;
+		padding-bottom: 0;
 	}
 
 	.logo :global(svg) {
@@ -43,6 +45,7 @@
 	}
 
 	h1 {
+		line-height: 1;
 		margin-bottom: 1rem;
 		animation: slide-up 1000ms 500ms ease backwards;
 	}
