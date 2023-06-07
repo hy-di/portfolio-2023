@@ -24,7 +24,7 @@
 
 <ImageSection image={imgPhotoModelsB}>
 	<p>
-		Doup shows an alarm clock, which was created from a model building project. 
+		doup shows an alarm clock, which was created from a model building project. 
 		That also functions as a radio and night light. This extremely round design is intended to emphasize the user experience.
 	</p>
 </ImageSection>

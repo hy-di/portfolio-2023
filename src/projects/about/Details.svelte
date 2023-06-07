@@ -13,7 +13,7 @@
 	</p>
 	<p>
 		My current specialty is in parametric design of technical products,
-		but I would like to further develop my other skills or even create new ones.
+		but I would like to further develop my other skills or create new ones.
 	</p>
 </ImageSection>
 

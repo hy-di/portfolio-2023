@@ -20,7 +20,7 @@
 
 <ImageSection image={imgAppAndSensor} flip>
 	<p>
-		cafy is a health monitoring system for everyone. 
+		cAfy is a health monitoring system for everyone. 
 		It is based on a three-level system that takes into account all persons with or without care needs, as well as their relatives.
 	</p>
 </ImageSection>
@@ -28,7 +28,7 @@
 <ImageSection image={imgWatchAndStand}>
 	<p>
 		It is a system that not only reacts quickly in emergencies, but also monitors the physical and mental health of the individual at all times. 
-		Cafy is timeless, soft and universally designed to provide comfort and security.
+		cAfy is timeless, soft and universally designed to provide comfort and security.
 	</p>
 </ImageSection>
 
