@@ -1,8 +1,12 @@
 <script lang="ts">
+	import { activeProjectID } from "../../stores";
+
 	export let open = false;
+
+	$: hide = ($activeProjectID === undefined);
 </script>
 
-<button class:open aria-label="Toggle Navigation" on:click>
+<button class:open class:hide aria-label="Toggle Navigation" on:click>
 	<div />
 	<div />
 	<div />
@@ -33,7 +37,9 @@
 		background-color: var(--c-fore);
 		box-shadow: 0 0.125em 0.5em hsl(var(--c-fore-hsl), 0.5);
 
-		transition: background-color 300ms ease;
+		transition:
+			background-color 300ms ease,
+			transform 150ms ease;
 	}
 
 	button:hover, button:focus-visible {
@@ -58,6 +64,10 @@
 	}
 	button.open div:nth-child(3) {
 		transform: translateY(calc(-100% - var(--gap))) rotate(calc(45deg * var(--rotation-mult)));
+	}
+
+	button:not(.open).hide {
+		transform: scale(0);
 	}
 
 	@media (min-width: 800px) {
