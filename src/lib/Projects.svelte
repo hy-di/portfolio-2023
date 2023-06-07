@@ -23,7 +23,7 @@
 	$: if (observer) {
 		observer.disconnect();
 		observer.observe(preProjectEl);
-		projectEls.forEach(observer.observe);
+		projectEls.forEach(observer.observe.bind(observer));
 	}
 </script>
 
