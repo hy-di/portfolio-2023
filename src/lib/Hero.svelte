@@ -32,7 +32,7 @@
 	}
 
 	.logo {
-		width: 33ch;
+		width: 36ch;
 		max-width: 100%;
 		color: var(--c-primary);
 		padding: 1em;
