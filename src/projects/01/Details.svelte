@@ -21,7 +21,7 @@
 <ImageSection image={imgAppAndSensor} flip>
 	<p>
 		cAfy is a health monitoring system for everyone. 
-		It is based on a three-level system that takes into account all persons with or without care needs, as well as their relatives.
+		It is based on a three-level system that takes into account all people with or without needs of care, as well as their relatives.
 	</p>
 </ImageSection>
 
@@ -34,6 +34,6 @@
 
 <ImageSection image={imgPhotomodels} flip>
 	<p>
-		The product catalog to date consists of a smartwatch with charging stations, a room sensor and an app to view the collected data.
+		The current product catalogue consists of a smartwatch with charging stations, a room sensor and an app to view the collected data.
 	</p>
 </ImageSection>

@@ -3,25 +3,30 @@
 
 	import imgPicturesA from "./about_picturesA.webp";
 	import imgPicturesB from "./about_picturesB.webp";
+	import imgMonogramm from "./about_monogramm.webp";
 
 </script>
 
 <ImageSection image={imgPicturesA} flip>
 	<p>
-		Hi, my name is Heidi and I completed my bachelor's degree at the beginning of the year.
-		Currently I am looking forward to make new professional experiences in and around Munich.
-	</p>
-	<p>
-		My current specialty is in parametric design of technical products,
-		but I would like to further develop my other skills or create new ones.
+		Due to my fundamental interest in physics and technical design, 
+		my first professional experience led me to OXXID, a small design agency in Munich. 
+		Already during my bachelor's degree in integrated product design, 
+		I started working there, which gave me the opportunity to not only get to know essential software, 
+		but could also test my skills offsite the digital world in the in-house workshop.
 	</p>
 </ImageSection>
 
 <ImageSection image={imgPicturesB}>
 	<p>
-		In my free time I love to travel around the world and gain new knowledge. I am a team player,
-		so I love being around people and having fun.	</p>
+		My current specialty is in parametric design of technical products, 
+		but I would like to further develop my other skills or even create new ones. 
+		That’s why after 1,5 years at OXXID it is time for a new adventure in the industrial design universe.
+	</p>
+</ImageSection>
+
+<ImageSection image={imgMonogramm} flip>
 	<p>
-		If I sparked your interest, please contact me by email at <a href="mailto:heidimeyer256@gmail.com">heidimeyer256@gmail.com</a>.
+		If I sparked your interest, please contact me by email at <a href="mailto:heidimeyer.design@gmail.com">heidimeyer.design@gmail.com</a>.
 	</p>
 </ImageSection>

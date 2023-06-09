@@ -19,7 +19,7 @@
 
 <ImageSection image={imgVolumeOverview} flip>
 	<p>
-		SKORE represents a product family, which is visually recognizable and cohesive in itself. This set focuses on the functions and handling.
+		SKORE represents a product family, which is visually recognizable and cohesive in itself. This set focuses on function and handling.
 	</p>
 </ImageSection>
 

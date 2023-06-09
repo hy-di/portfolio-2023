@@ -10,7 +10,7 @@
 
 <main>
 	<Navigation {projects} />
-	<Hero title="Heidi Meyer" text="I’m a junior industrial designer and here is some of my work." />
+	<Hero title="Heidi Meyer" text="I’m a junior industrial designer. Here are some examples of my work." />
 	<ProjectOverview {projects} />
 	<Projects {projects} />
 	<Footer>
