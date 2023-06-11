@@ -10,7 +10,7 @@
 <ImageSection image={imgPicturesA} flip>
 	<p>
 		Due to my fundamental interest in physics and technical design, 
-		my first professional experience led me to OXXID, a small design agency in Munich. 
+		my first professional experience led me to <a href="http://www.oxxid.de/" target="_blank" rel="noopener noreferrer">OXXID GmbH</a>, a small design agency in Munich. 
 		Already during my bachelor's degree in integrated product design, 
 		I started working there, which gave me the opportunity to not only get to know essential software, 
 		but could also test my skills offsite the digital world in the in-house workshop.
@@ -21,7 +21,7 @@
 	<p>
 		My current specialty is in parametric design of technical products, 
 		but I would like to further develop my other skills or even create new ones. 
-		That’s why after 1,5 years at OXXID it is time for a new adventure in the industrial design universe.
+		That’s why after 1,5 years at <a href="http://www.oxxid.de/" target="_blank" rel="noopener noreferrer">OXXID GmbH</a> it is time for a new adventure in the industrial design universe.
 	</p>
 </ImageSection>
 
