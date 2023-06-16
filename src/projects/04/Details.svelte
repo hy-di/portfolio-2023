@@ -22,7 +22,7 @@
 	</p>
 </ImageSection>
 
-<ImageSection image={imgPrototyps} flip verticalAlign="end">
+<ImageSection image={imgPrototyps} flip verticalAlign="start">
 	<img src={imgOverviewDraft} alt="">	
 </ImageSection>
 
