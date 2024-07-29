@@ -10,22 +10,26 @@
 <ImageSection image={imgPicturesA} flip>
 	<p>
 		Due to my fundamental interest in physics and technical design, 
-		my first professional experience led me to <a href="http://www.oxxid.de/" target="_blank" rel="noopener noreferrer">OXXID GmbH</a>, a small design agency in Munich. 
-		Already during my bachelor's degree in integrated product design, 
-		I started working there, which gave me the opportunity to not only get to know essential software, 
-		but could also test my skills offsite the digital world in the in-house workshop.
+		I have already gained experiences and acquired knowledge 
+		about the manufacture of products. During my bachelor's degree in 
+		integrated product design, I started working in a small agency, which 
+		not only gave me the opportunity to not only get to know the most 
+		important software programs, but also to build my skills offsite the 
+		digital world in the in-house workshop.
 	</p>
+		
 </ImageSection>
 
-<ImageSection image={imgPicturesB}>
+
+
+<ImageSection image={imgMonogramm}>
 	<p>
-		My current specialty is in parametric design of technical products, 
-		but I would like to further develop my other skills or even create new ones. 
-		That’s why after 1,5 years at <a href="http://www.oxxid.de/" target="_blank" rel="noopener noreferrer">OXXID GmbH</a> it is time for a new adventure in the industrial design universe.
+		My speciality is parametric design of technical products, but I 
+		want to develop my other skills or even develop new ones. So I 
+		thought it was time for a new adventure in the industrial design 
+		universe and became a freelancer while starting a master program 
+		at the beginning of 2024.
 	</p>
-</ImageSection>
-
-<ImageSection image={imgMonogramm} flip>
 	<p>
 		If I sparked your interest, please contact me by email at <a href="mailto:heidimeyer.design@gmail.com">heidimeyer.design@gmail.com</a>.
 	</p>
